@@ -1,0 +1,165 @@
+/* Estilo General */
+body {
+    background-color: cornflowerblue;
+    font-family: 'Fantasy', cursive;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+/* Cabecera */
+#cabecera {
+    background-color: teal;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-bottom: 4px solid gold;
+}
+
+#cabecera h1 {
+    color: gold;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px white;
+}
+
+#cabecera input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid gold;
+    margin-right: 10px;
+}
+
+#cabecera .btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#botonPelis {
+    background-color: antiquewhite;
+    color: teal;
+    border: 2px solid teal;
+}
+
+#botonSeries {
+    background-color: cadetblue;
+    color: white;
+    border: 2px solid white;
+}
+
+#botonEstadisticas {
+    background-color: gold;
+    color: black;
+    border: 2px solid black;
+}
+
+#cabecera .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Inicio */
+#Inicio {
+    background-image: url("/img/fondoInicio.gif");
+    background-size: cover;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#textoInicio {
+    text-align: center;
+    font-family: fantasy;
+    color: white; 
+    font-size: 1.2rem;
+    margin: 0 auto;
+    max-width: 800px;
+    line-height: 1.8;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); 
+    border-radius: 15px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); 
+    text-shadow: 2px 2px 5px black; 
+}
+
+
+
+/* Busqueda */
+#Busqueda {
+    display: none;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        flex-direction: column; 
+        align-items: center; 
+    
+}
+
+#numeroResultados {
+    text-align: center; 
+    font-size: 1.5rem; 
+    color: darkblue; 
+    margin-bottom: 20px; 
+}
+#lista {
+    display: flex;
+    flex-wrap: wrap; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px; /* Espacio entre elementos */
+    justify-content: space-evenly; /* Distribuir uniformemente los elementos */
+}
+
+#lista li {
+    flex: 1 1 calc(25% - 20px); /* Cada elemento ocupa 25% menos el espacio del gap */
+    background: white;
+    color: teal;
+    padding: 10px;
+    margin: 0; /* Eliminamos margen adicional para un mejor ajuste */
+    border: 2px solid teal;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    text-align: center; /* Centrar texto dentro del elemento */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Añadimos una sombra para realce */
+}
+
+#lista li:hover {
+    transform: scale(1.05); /* Mantén el efecto al pasar el ratón */
+    background-color: antiquewhite;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Aumentar la sombra al pasar el ratón */
+}
+
+/* Detalle */
+#detalle {
+    display: none;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Botón de Buscar Más */
+#buscarMas {
+    background-color: gold;
+    color: black;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#buscarMas:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: darkgoldenrod;
+    color: white;
+}

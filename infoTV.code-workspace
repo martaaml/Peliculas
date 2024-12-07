@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../PrimerTrimestre/Tema6/prueba"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "infoTV"
+	}
+}
