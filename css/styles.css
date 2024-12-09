@@ -112,27 +112,27 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 20px; /* Espacio entre elementos */
-    justify-content: space-evenly; /* Distribuir uniformemente los elementos */
+    gap: 20px; 
+    justify-content: space-evenly; 
 }
 
 #lista li {
-    flex: 1 1 calc(25% - 20px); /* Cada elemento ocupa 25% menos el espacio del gap */
+    flex: 1 1 calc(25% - 20px);
     background: white;
     color: teal;
     padding: 10px;
-    margin: 0; /* Eliminamos margen adicional para un mejor ajuste */
+    margin: 0; 
     border: 2px solid teal;
     border-radius: 8px;
     transition: transform 0.3s;
-    text-align: center; /* Centrar texto dentro del elemento */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Añadimos una sombra para realce */
+    text-align: center; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 #lista li:hover {
-    transform: scale(1.05); /* Mantén el efecto al pasar el ratón */
+    transform: scale(1.05); 
     background-color: antiquewhite;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Aumentar la sombra al pasar el ratón */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); 
 }
 
 /* Detalle */
