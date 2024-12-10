@@ -111,12 +111,12 @@ function mostrarInicio() {
 }
 
 function scrollInfinito() {
-    // Evitar múltiples llamadas a cargarPaginas
+   
     if (isLoading || !llegaFinal()) return;
 
-    isLoading = true; // Marcar como cargando
+    isLoading = true; 
     cargarPaginas();
-    isLoading = false; // Liberar el estado después de cargar
+    isLoading = false; 
 }
 
 function llegaFinal() {
@@ -131,7 +131,7 @@ function llegaFinal() {
 function busquedaSola() {
     const searchTerm = document.getElementById("BuscarPelicula").value.trim();
 
-    // Verificamos si el texto tiene al menos 4 caracteres
+
     if (searchTerm.length >= 4) {
         fetch(`https://www.omdbapi.com/?apikey=466ebfd1&s=${searchTerm}`)
             .then((response) => response.json())
@@ -144,7 +144,6 @@ function busquedaSola() {
                 document.getElementById("numeroResultados").innerText =
                     `Se encontraron ${numResultados} resultados`;
 
-                // Si hay resultados, agregarlos a la lista
                 if (data.Search) {
                     data.Search.forEach((pelicula) => {
                         const li = document.createElement("li");
@@ -162,10 +161,10 @@ function busquedaSola() {
     }
 }
 
-// Asignar la función de búsqueda al evento de entrada del input
+
 document.getElementById("BuscarPelicula").addEventListener("input", busquedaSola);
 
-// BUSQUEDA PELIS
+// BUSQUEDA SERIES
 function busquedaSeries() {
     mostrarPelis();
     let peliABuscar = document.getElementById("BuscarPelicula").value;
